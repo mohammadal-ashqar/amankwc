@@ -1,6 +1,15 @@
 /*================================================
 Default CSS
 =================================================*/
+
+
+:root {
+  --mainColor: #e7500fe9;
+  --balckColor: #000;
+  --mainText: #3c3c3b;
+  --lightColor: #3c3c3b2e;
+}
+
 .switch-box {
   position: fixed;
   z-index: 1;
@@ -46,23 +55,23 @@ Default CSS
   -webkit-transition: 0.4s;
   transition: 0.4s;
   -webkit-box-shadow: 0 0px 15px #2020203d;
-          box-shadow: 0 0px 15px #2020203d;
+  box-shadow: 0 0px 15px #2020203d;
   background: url(../../assets/img/night.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.switch-box input:checked + .slider {
+.switch-box input:checked+.slider {
   background-color: #cbc1c1;
 }
 
-.switch-box input:focus + .slider {
+.switch-box input:focus+.slider {
   background-color: #4d4949;
 }
 
-.switch-box input:checked + .slider:before {
+.switch-box input:checked+.slider:before {
   -webkit-transform: translateX(24px);
-          transform: translateX(24px);
+  transform: translateX(24px);
   background: url(../img/sunny.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -90,23 +99,56 @@ Default CSS
 }
 
 .theme-dark p a:hover {
-  color: #0383ff !important;
+  color: var(--mainColor) !important;
 }
 
 .theme-dark a {
   color: #ffffff;
 }
 
-.theme-dark .h1, .theme-dark .h2, .theme-dark .h3, .theme-dark .h4, .theme-dark .h5, .theme-dark .h6, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
+.theme-dark .h1,
+.theme-dark .h2,
+.theme-dark .h3,
+.theme-dark .h4,
+.theme-dark .h5,
+.theme-dark .h6,
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6 {
   color: #ffffff !important;
 }
 
-.theme-dark .h1 a, .theme-dark .h2 a, .theme-dark .h3 a, .theme-dark .h4 a, .theme-dark .h5 a, .theme-dark .h6 a, .theme-dark h1 a, .theme-dark h2 a, .theme-dark h3 a, .theme-dark h4 a, .theme-dark h5 a, .theme-dark h6 a {
+.theme-dark .h1 a,
+.theme-dark .h2 a,
+.theme-dark .h3 a,
+.theme-dark .h4 a,
+.theme-dark .h5 a,
+.theme-dark .h6 a,
+.theme-dark h1 a,
+.theme-dark h2 a,
+.theme-dark h3 a,
+.theme-dark h4 a,
+.theme-dark h5 a,
+.theme-dark h6 a {
   color: #ffffff !important;
 }
 
-.theme-dark .h1 a:hover, .theme-dark .h2 a:hover, .theme-dark .h3 a:hover, .theme-dark .h4 a:hover, .theme-dark .h5 a:hover, .theme-dark .h6 a:hover, .theme-dark h1 a:hover, .theme-dark h2 a:hover, .theme-dark h3 a:hover, .theme-dark h4 a:hover, .theme-dark h5 a:hover, .theme-dark h6 a:hover {
-  color: #0383ff !important;
+.theme-dark .h1 a:hover,
+.theme-dark .h2 a:hover,
+.theme-dark .h3 a:hover,
+.theme-dark .h4 a:hover,
+.theme-dark .h5 a:hover,
+.theme-dark .h6 a:hover,
+.theme-dark h1 a:hover,
+.theme-dark h2 a:hover,
+.theme-dark h3 a:hover,
+.theme-dark h4 a:hover,
+.theme-dark h5 a:hover,
+.theme-dark h6 a:hover {
+  color: var(--mainColor) !important;
 }
 
 .theme-dark .bg-color {
@@ -141,12 +183,16 @@ Default CSS
   color: #ffffff;
 }
 
-.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item a:hover, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item a:focus, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item a.active {
-  color: #0383ff !important;
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item a:hover,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item a:focus,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item a.active {
+  color: var(--mainColor) !important;
 }
 
-.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item:hover a, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item:focus a, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item.active a {
-  color: #0383ff !important;
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item:hover a,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item:focus a,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item.active a {
+  color: var(--mainColor) !important;
 }
 
 .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu {
@@ -158,8 +204,10 @@ Default CSS
   border-bottom: 1px dashed #000000;
 }
 
-.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-  color: #0383ff !important;
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
+  color: var(--mainColor) !important;
 }
 
 .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
@@ -167,15 +215,19 @@ Default CSS
   border-bottom: 1px dashed #000000;
 }
 
-.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
-  color: #0383ff !important;
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+  color: var(--mainColor) !important;
 }
 
 .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #ffffff;
 }
 
-.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #0383ff;
 }
 
@@ -183,7 +235,9 @@ Default CSS
   color: #ffffff;
 }
 
-.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #0383ff;
 }
 
@@ -191,7 +245,9 @@ Default CSS
   color: #ffffff;
 }
 
-.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #0383ff;
 }
 
@@ -199,7 +255,9 @@ Default CSS
   color: #ffffff;
 }
 
-.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #0383ff;
 }
 
@@ -207,7 +265,9 @@ Default CSS
   color: #ffffff;
 }
 
-.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.theme-dark .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #0383ff;
 }
 
@@ -606,4 +666,5 @@ Default CSS
 .theme-dark .user-area-style .contact-form-action form .form-group .form-control::placeholder {
   color: #ffffff;
 }
+
 /*# sourceMappingURL=dark.css.map */
