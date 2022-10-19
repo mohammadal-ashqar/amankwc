@@ -774,6 +774,7 @@ Nav Area Style
   transition: all 0.2s ease-in-out;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
 }
 
 .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li {
@@ -783,7 +784,7 @@ Nav Area Style
 
 .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
   font-size: 14px;
-  color: #000024;
+  color: var(--mainText);
   position: relative;
   padding: 10px 15px;
   border-bottom: 1px dashed #eeeeee;
@@ -791,6 +792,7 @@ Nav Area Style
   margin-right: 0;
   text-transform: capitalize;
   display: block;
+  background-color: #efefefe8;
   font-weight: 600;
 }
 
@@ -1445,11 +1447,8 @@ Services Area Style
   transform: rotateX(-360deg);
 }
 
-/*
-Choose Area Style
-======================================================*/
 .choose-us-area {
-  background: url(../img/aman-img/world.jpg);
+  background: url(../img/aman-img/preview.gif) no-repeat center left;
 }
 
 .choose-us-area-three .single-choose-us-box {
@@ -1458,6 +1457,32 @@ Choose Area Style
 }
 
 .choose-us-area-three .choose-us-content p {
+  margin-bottom: 35px;
+}
+
+
+/*
+Choose Area Style
+======================================================*/
+.value-area {
+  background: url(../img/aman-img/pexels-martin-damboldt-799091.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.value-area-overlay {
+  background: linear-gradient(270deg, var(--mainText) 0%, rgba(239, 84, 0, 0.79) 100%);
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.value-area-three .single-choose-us-box {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.value-area-three .choose-us-content p {
   margin-bottom: 35px;
 }
 
@@ -1476,6 +1501,7 @@ Choose Area Style
 .choose-us-content h2 {
   font-size: 27px;
   margin-bottom: 25px;
+  color: #fff;
 }
 
 .choose-us-content p {
@@ -2012,6 +2038,11 @@ Partner Area Style
 /*
 Blog Area Style
 ======================================================*/
+.blog-area {
+  background: url(../img/aman-img/world.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+
 .blog-area-two .single-blog-post {
   margin-left: 0;
   margin-right: 0;
@@ -2134,7 +2165,7 @@ Blog Area Style
 Footer Top Area Style
 ======================================================*/
 .footer-area {
-  background-color: #00000073;
+  background-color: #eee;
 }
 
 .single-footer-widget {
@@ -2148,7 +2179,7 @@ Footer Top Area Style
 
 .single-footer-widget p {
   margin-bottom: 20px;
-  color: #c3c3c3;
+  color: var(--mainText);
 }
 
 .single-footer-widget .social-icon {
@@ -2168,7 +2199,7 @@ Footer Top Area Style
   height: 30px;
   line-height: 28px;
   border: 1px solid var(--mainColor);
-  color: #ffffff;
+  color: var(--mainColor);
   text-align: center;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -2180,11 +2211,11 @@ Footer Top Area Style
 }
 
 .single-footer-widget .social-icon li a:hover i {
-  background-color: var(--mainColor);
+  border-radius: 15px;
 }
 
 .single-footer-widget h3 {
-  color: #ffffff;
+  color: rgb(32, 32, 32);
   font-size: 24px;
   margin-bottom: 30px;
   padding-bottom: 15px;
@@ -2195,10 +2226,10 @@ Footer Top Area Style
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 50% !important;
   height: 1px;
-  background-color: #acabab;
+  background-color: rgb(209, 209, 209);
 }
 
 .single-footer-widget .address {
@@ -2210,6 +2241,7 @@ Footer Top Area Style
 .single-footer-widget .address .location {
   padding-left: 40px;
   position: relative;
+  color: rgb(32, 32, 32);
 }
 
 .single-footer-widget .address .location i {
@@ -2229,7 +2261,7 @@ Footer Top Area Style
 
 .single-footer-widget .address li a {
   display: block;
-  color: #c3c3c3;
+  color: rgb(32, 32, 32);
 }
 
 .single-footer-widget .address li a:hover {
@@ -2265,15 +2297,15 @@ Footer Top Area Style
   position: absolute;
   top: 7px;
   left: 0;
-  width: 11px;
-  height: 11px;
+  width: 7px;
+  height: 7px;
   background-color: var(--mainColor);
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 
 .single-footer-widget .import-link li a {
-  color: #c3c3c3;
+  color: rgb(32, 32, 32);
 }
 
 .single-footer-widget .import-link li:last-child {
@@ -2292,15 +2324,15 @@ Footer Top Area Style
 Copy Right Area Style
 ======================================================*/
 .copy-right-area {
-  background-color: #00000073;
-  border-top: 1px solid #acabab;
+  background-color: #eee;
+  border-top: 1px solid rgb(209, 209, 209);
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
 }
 
 .copy-right-area p {
-  color: #ffffff;
+  color: var(--mainText);
 }
 
 .copy-right-area p a {
@@ -2366,7 +2398,7 @@ Team Area Style
 }
 
 .single-team-member .team-content {
-  background-color: #000024;
+  background-color: rgb(197, 197, 197);
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 30px;
@@ -2380,14 +2412,30 @@ Team Area Style
 .single-team-member .team-content span {
   display: block;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: var(--mainColor);
+  font-size: 14px;
+}
+
+.single-team-member .team-content:hover span {
+  display: block;
+  margin-bottom: 10px;
+  color: #cccccc;
   font-size: 14px;
 }
 
 .single-team-member .team-content h3 {
   margin-bottom: 0;
-  color: #ffffff;
+  color: var(--mainText);
   font-size: 22px;
+  transition: all ease 1s;
+}
+
+
+.single-team-member .team-content:hover h3 span {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 22px;
+  transition: all ease 1s;
 }
 
 .single-team-member .team-content .team-social .control {
@@ -2716,7 +2764,7 @@ Page Title Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #000000c9;
   opacity: 0.7;
 }
 
@@ -2728,6 +2776,7 @@ Page Title Area Style
 .page-title-area .page-title-content h2 {
   margin-bottom: 15px;
   font-size: 50px;
+  color: var(--mainColor);
 }
 
 .page-title-area .page-title-content ul {
@@ -2763,7 +2812,7 @@ Page Title Area Style
 }
 
 .page-title-area .page-title-content ul li a {
-  color: #000024;
+  color: var(--mainColor);
 }
 
 .page-title-area .page-title-content ul li a:hover {
@@ -2771,7 +2820,7 @@ Page Title Area Style
 }
 
 .page-title-area .page-title-content ul .active {
-  color: var(--mainColor);
+  color: #fff;
 }
 
 .page-title-area.bg-1 {
@@ -2795,7 +2844,7 @@ Page Title Area Style
 }
 
 .page-title-area.bg-6 {
-  background-image: url(../../assets/img/page-bg/page-bg-6.jpg);
+  background-image: url(../../assets/img/aman-img/businesspeople-meeting-office-hand-shake.jpg);
 }
 
 .page-title-area.bg-7 {
@@ -2823,7 +2872,7 @@ Page Title Area Style
 }
 
 .page-title-area.bg-13 {
-  background-image: url(../../assets/img/page-bg/page-bg-3.jpg);
+  background-image: url(../../assets/img/aman-img/pexels-kampus-production-8815843.jpg);
 }
 
 .page-title-area.bg-14 {
@@ -2987,7 +3036,7 @@ FAQ Area Style
 Privacy Policy Area Style
 =====================================================*/
 .privacy-policy {
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: auto;
 }
 
@@ -6375,7 +6424,16 @@ Tabs Area Style*/
 
 /*  ============== Tracking Page ================= */
 
-.tracking-area {}
+.tracking-section {
+  background-color: #F2F2F2;
+  width: 100%;
+  height: 100vh;
+}
+
+.tracking-area {
+  background: url(../img/aman-img/c49a207e0f89c9290d98fd43a87a8cb0.gif) no-repeat center left;
+  background-size: contain;
+}
 
 
 .tracking-step {
@@ -6422,7 +6480,7 @@ Tabs Area Style*/
 
 .tracking-form {
   text-align: center;
-  margin-top: 15%;
+  margin-top: 2%;
 }
 
 .tracking-form .row {
@@ -6461,5 +6519,251 @@ Tabs Area Style*/
 .tracking-btn:hover {
   color: #fff;
 }
+
+.image-side {
+  text-align: end;
+}
+
+
+.submit-msg {
+  font-size: 12px;
+  margin-top: 15px;
+  color: red;
+  /* display: none; */
+}
+
+
+/* ============ area about us =========== */
+.about-us-area {
+  background: url(../img/aman-img/world.jpg);
+}
+
+
+/* ========= model =========== */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  /* z-index: 1; */
+  /* Sit on top */
+  padding-top: 200px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* ! =================================================== */
+
+/* Portfolio Section
+--------------------------------*/
+#portfolio {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+#portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+
+#portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 18px 14px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #666666;
+  margin: 0 5px 10px 5px;
+  transition: all ease-in-out 0.3s;
+  background: white;
+  border-radius: 4px;
+}
+
+#portfolio #portfolio-flters li:hover,
+#portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: var(--mainColor);
+}
+
+#portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+#portfolio .portfolio-item {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#portfolio .portfolio-item img {
+  position: relative;
+  top: 0;
+  transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.image-category {
+  width: 416px;
+  height: 312px;
+}
+
+#portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -50px;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: #2dc997;
+  padding: 15px 20px;
+}
+
+#portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#portfolio .portfolio-item .portfolio-info p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#portfolio .portfolio-item .portfolio-info .preview-link,
+#portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 18px);
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+#portfolio .portfolio-item .portfolio-info .preview-link:hover,
+#portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: #a4ebd4;
+}
+
+#portfolio .portfolio-item .portfolio-info .details-link {
+  right: 15px;
+}
+
+#portfolio .portfolio-item:hover img {
+  top: -30px;
+}
+
+#portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #2dc997;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #2dc997;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(102, 102, 102, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
 
 /*# sourceMappingURL=style.css.map */
