@@ -1,52 +1,3 @@
-/*
-@File: Ezio Template Styles
-
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the template.
-
-This files table contents are outlined below>>>>>
-
-******************************************* 
-** - DEFAULT AREA STYLE - **
-
-** - Default Btn Area Style
-** - Read More Area Style
-** - Section Title Area Style
-
-** - HOME PAGE STYLE - **
-
-** - Header Area Style
-** - Nav Area Style
-** - Mobile Nav Area Style
-** - Banner Area Style
-** - About Area Style
-** - Services Area Style
-** - Choose Area Style
-** - Counter Area Style
-** - Pricing Area Style
-** - Shipment Area Style
-** - Testimonials Area Style
-** - Client Area Style
-** - Partner Area Style
-** - Blog Area Style
-** - Footer Top Area Style
-** - Copy Right Area Style
-
-** - OTHER STYLE AREA - **
-
-** - Preloader Area Style
-** - Go Top Style
-** - Video wave Style
-** - Section Title Area Style
-** - Nice select Area
-
-*******************************************
-/*
-
-/*
-Default Style
-============================*/
-
 @font-face {
   font-family: BahijExtraBold;
   src: url(../fonts/Bahij_TheSansArabic-ExtraBold.ttf);
@@ -71,7 +22,6 @@ Default Style
   font-family: BahijLight;
   src: url(../fonts/Bahij_TheSansArabic-Light.ttf);
 }
-
 
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
@@ -276,8 +226,6 @@ Default Btn Area Style*/
   position: absolute;
   top: 0;
   left: 0;
-  /* background: -webkit-gradient(linear, left top, left bottom, from(var(--mainText)), to(transparent)); */
-  /* background: linear-gradient(top, green, transparent); */
   width: 2px;
   height: 100%;
 }
@@ -287,8 +235,6 @@ Default Btn Area Style*/
   position: absolute;
   bottom: 0;
   right: 0;
-  /* background: -webkit-gradient(linear, left bottom, left top, from(var(--mainText)), to(transparent)); */
-  /* background: linear-gradient(bottom, green, transparent); */
   width: 2px;
   height: 100%;
 }
@@ -298,8 +244,6 @@ Default Btn Area Style*/
   position: absolute;
   top: 0;
   left: 0;
-  /* background: -webkit-gradient(linear, right top, left top, from(var(--mainText)), to(transparent)); */
-  /* background: linear-gradient(right,green, transparent); */
   width: 100%;
   height: 2px;
 }
@@ -309,8 +253,6 @@ Default Btn Area Style*/
   position: absolute;
   bottom: 0;
   left: 0;
-  /* background: -webkit-gradient(linear, left top, right top, from(var(--mainText)), to(transparent)); */
-  /* background: linear-gradient(left, green, transparent); */
   width: 100%;
   height: 2px;
 }
@@ -731,7 +673,7 @@ Nav Area Style
 .navbar-area.is-sticky .navbar .navbar-nav .nav-item a {
   font-size: 15px;
   font-weight: 600;
-  color: #0b0b0b;
+  color: #fff;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   margin-left: 0;
@@ -951,7 +893,7 @@ Nav Area Style
 .navbar-area.navbar-area-style-two.is-sticky {
   max-width: 100%;
   border-radius: 0;
-  background-color: #efefefe8;
+  background-color: #000000b3;
 }
 
 .mobile-nav {
@@ -1077,6 +1019,7 @@ Banner Area Style
 .banner-area.banner-area-two .banner-content h1 {
   color: #ffffff;
   font-size: 69px;
+  font-family: "BahijExtraBold";
 }
 
 .banner-area.banner-area-two .banner-content p {
@@ -1116,7 +1059,7 @@ Banner Area Style
   display: block;
   margin-bottom: 15px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .banner-content h1 {
@@ -1320,7 +1263,7 @@ About Area Style
   display: block;
   margin-bottom: 15px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .about-content h2 {
@@ -1410,9 +1353,8 @@ Services Area Style
 
 .single-services-box i {
   font-size: 50px;
-  background-color: var(--lightColor);
-  ;
-  color: var(--mainColor);
+  background-color: var(--mainColor);
+  color: #fff;
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -1471,7 +1413,7 @@ Choose Area Style
 }
 
 .value-area-overlay {
-  background: linear-gradient(270deg, var(--mainText) 0%, rgba(239, 84, 0, 0.79) 100%);
+  background: linear-gradient(270deg, #3c3c3bb3 0%, rgba(239, 84, 0, 0.79) 100%);
   z-index: 1;
   width: 100%;
   height: auto;
@@ -1495,13 +1437,13 @@ Choose Area Style
   display: block;
   margin-bottom: 15px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .choose-us-content h2 {
   font-size: 27px;
   margin-bottom: 25px;
-  color: #fff;
+  color: var(--mainText);
 }
 
 .choose-us-content p {
@@ -1510,7 +1452,7 @@ Choose Area Style
 
 .choose-us-content .single-choose-us-box {
   background-color: #eef9ff;
-  padding: 20px;
+  padding: 17px;
 }
 
 .choose-us-content .single-choose-us-box i {
@@ -1608,9 +1550,8 @@ Counter Area Style
   line-height: 70px;
   font-size: 40px;
   border-radius: 50%;
-  color: var(--mainColor);
-  background-color: #eee;
-  ;
+  color: #fff;
+  background-color: var(--mainColor);
   display: inline-block;
   margin: 0 auto 18px;
 }
@@ -1779,7 +1720,7 @@ Shipment Area Style
   display: block;
   margin-bottom: 15px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .shipment-content h2 {
@@ -1939,7 +1880,7 @@ Testimonials Area Style
 }
 
 .testimonials-slider .owl-item img {
-  width: auto;
+  width: 90px;
 }
 
 /*
@@ -2064,11 +2005,14 @@ Blog Area Style
 
 .single-blog-post .post-image a {
   display: block;
+  width: 430px;
+  height: 100%;
 }
 
 .single-blog-post .post-image a img {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
+  height: 400px;
 }
 
 .single-blog-post .blog-content {
@@ -2165,7 +2109,7 @@ Blog Area Style
 Footer Top Area Style
 ======================================================*/
 .footer-area {
-  background-color: #eee;
+  background-color: var(--mainColor);
 }
 
 .single-footer-widget {
@@ -2179,7 +2123,7 @@ Footer Top Area Style
 
 .single-footer-widget p {
   margin-bottom: 20px;
-  color: var(--mainText);
+  color: #fff;
 }
 
 .single-footer-widget .social-icon {
@@ -2198,8 +2142,8 @@ Footer Top Area Style
   width: 30px;
   height: 30px;
   line-height: 28px;
-  border: 1px solid var(--mainColor);
-  color: var(--mainColor);
+  border: 1px solid #fff;
+  color: #fff;
   text-align: center;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -2215,7 +2159,7 @@ Footer Top Area Style
 }
 
 .single-footer-widget h3 {
-  color: rgb(32, 32, 32);
+  color: #fff;
   font-size: 24px;
   margin-bottom: 30px;
   padding-bottom: 15px;
@@ -2241,12 +2185,12 @@ Footer Top Area Style
 .single-footer-widget .address .location {
   padding-left: 40px;
   position: relative;
-  color: rgb(32, 32, 32);
+  color: #fff;
 }
 
 .single-footer-widget .address .location i {
   position: absolute;
-  color: var(--mainColor);
+  color: #fff;
   left: 0;
   top: 5px;
   font-size: 25px;
@@ -2261,11 +2205,11 @@ Footer Top Area Style
 
 .single-footer-widget .address li a {
   display: block;
-  color: rgb(32, 32, 32);
+  color: #fff;
 }
 
 .single-footer-widget .address li a:hover {
-  color: var(--mainColor);
+  color: #fff;
 }
 
 .single-footer-widget .address li:last-child {
@@ -2274,7 +2218,7 @@ Footer Top Area Style
 
 .single-footer-widget .address li i {
   position: absolute;
-  color: var(--mainColor);
+  color: #fff;
   left: 0;
   top: 5px;
   font-size: 25px;
@@ -2299,13 +2243,13 @@ Footer Top Area Style
   left: 0;
   width: 7px;
   height: 7px;
-  background-color: var(--mainColor);
+  background-color: #fff;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 
 .single-footer-widget .import-link li a {
-  color: rgb(32, 32, 32);
+  color: #fff;
 }
 
 .single-footer-widget .import-link li:last-child {
@@ -2314,17 +2258,18 @@ Footer Top Area Style
 
 .single-footer-widget .import-link li:hover::before {
   border-radius: 50%;
+  background-color: #fff;
 }
 
 .single-footer-widget .import-link li:hover a {
-  color: var(--mainColor);
+  color: #fff;
 }
 
 /*
 Copy Right Area Style
 ======================================================*/
 .copy-right-area {
-  background-color: #eee;
+  background-color: var(--mainColor);
   border-top: 1px solid rgb(209, 209, 209);
   padding-top: 15px;
   padding-bottom: 15px;
@@ -2336,7 +2281,7 @@ Copy Right Area Style
 }
 
 .copy-right-area p a {
-  color: var(--mainColor);
+  color: #fff;
 }
 
 .copy-right-area p i {
@@ -2359,9 +2304,8 @@ Feature Area Style
 
 .single-feature-box i {
   font-size: 50px;
-  background-color: var(--lightColor);
-  ;
-  color: var(--mainColor);
+  background-color: var(--mainColor);
+  color: #fff;
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -2395,6 +2339,26 @@ Team Area Style
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   margin-bottom: 30px;
+}
+
+
+.single-team-member .user-image {
+  width: 50px;
+  height: 52px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  border-radius: 45px;
+  top: -39px;
+  font-size: 50px;
+  color: var(--mainColor);
+  text-align: center;
+}
+
+.single-team-member .user-image i {
+  position: ABSOLUTE;
+  left: 1px;
+  top: -11px;
 }
 
 .single-team-member .team-content {
@@ -2880,7 +2844,9 @@ Page Title Area Style
 }
 
 .page-title-area.bg-15 {
-  background-image: url(../../assets/img/page-bg/page-bg-5.jpg);
+  background: url(../../assets/img/aman-img/warehouse-worker-woman-collects-cardboard-boxes-parcels-from-shelf-puts-them-cart-girl-staff-green-shirt-point-finger-up-while-searching-products-storehouse-manager-stocktaking.jpg);
+  background-size: cover;
+
 }
 
 .page-title-area.bg-16 {
@@ -2904,7 +2870,7 @@ Page Title Area Style
 }
 
 .page-title-area.bg-21 {
-  background-image: url(../../assets/img/page-bg/page-bg-1.jpg);
+  background-image: url(../../assets/img/aman-img/hong-kong-terminal-port.jpg);
 }
 
 .page-title-area.bg-22 {
@@ -2920,7 +2886,8 @@ Page Title Area Style
 }
 
 .page-title-area.bg-25 {
-  background-image: url(../../assets/img/page-bg/page-bg-5.jpg);
+  background: url(../../assets/img/aman-img/asian-businesswoman-collaborating-with-manager-increase-company-revenue-during-business-meeting-startup-office-asian-businesswomen-working-management-strategy-planning-business-partnership.jpg) center center;
+  background-size: cover;
 }
 
 .page-title-area.bg-26 {
@@ -5808,56 +5775,13 @@ Preloader Area Style*/
   z-index: 99999;
 }
 
-.preloader .lds-ripple {
-  position: relative;
-  width: 80px;
-  height: 80px;
+.lodering {
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.preloader .lds-ripple div {
-  position: absolute;
-  border: 2px solid #ffffff;
-  opacity: 1;
-  border-radius: 50%;
-  -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-}
-
-.preloader .lds-ripple div:nth-child(2) {
-  -webkit-animation-delay: -0.5s;
-  animation-delay: -0.5s;
-}
-
-.preloader::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 60%;
-  z-index: -1;
-  background: var(--mainColor);
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-
-.preloader::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 60%;
-  z-index: -1;
-  background: var(--mainColor);
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  left: auto;
-  right: 0;
+  left: 45%;
 }
 
 .preloader.preloader-deactivate {
@@ -6499,25 +6423,7 @@ Tabs Area Style*/
 }
 
 .tracking-btn {
-  font-size: 16px;
-  color: #ffffff;
-  padding: 15px 40px;
-  line-height: 1;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  text-align: center;
-  background-color: var(--mainColor);
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  display: inline-block;
-  margin-bottom: -5px;
   margin-top: 2%;
-  border-radius: 15px;
-}
-
-.tracking-btn:hover {
-  color: #fff;
 }
 
 .image-side {
@@ -6766,4 +6672,16 @@ Tabs Area Style*/
 }
 
 
-/*# sourceMappingURL=style.css.map */
+.content-table {
+  text-align: center;
+}
+
+
+.privacy-policy .title,
+h2 {
+  color: var(--mainColor);
+}
+
+.privacy-policy ol li::marker {
+  color: var(--mainColor);
+}
